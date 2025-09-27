@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @import "tailwindcss";
 
 @theme {
@@ -11,11 +17,6 @@
   --color-zinc: #101010;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   color: white;
@@ -51,11 +52,11 @@ canvas {
 }
 
 @utility color-container {
-  @apply flex items-center justify-center !px-4 py-4 rounded-full bg-gray-300 backdrop-blur;
+  @apply flex items-center justify-center !px-4 !py-4 rounded-full bg-gray-300 backdrop-blur;
 }
 
 @utility size-btn-container {
-  @apply flex items-center justify-center !p-1 rounded-full bg-gray-300 backdrop-blur ml-3 gap-1;
+  @apply flex items-center justify-center !p-1 rounded-full bg-gray-300 backdrop-blur !ml-3 gap-1;
 }
 
 @utility size-btn {
@@ -63,7 +64,7 @@ canvas {
 }
 
 @utility common-padding {
-  @apply sm:!py-32 py-20 sm:!px-10 !px-5;
+  @apply sm:!py-32 !py-20 sm:!px-10 !px-5;
 }
 
 @utility section-heading {
