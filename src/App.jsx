@@ -9,18 +9,10 @@ const App = () => {
 
   return (
     <main className="bg-black">
-      {/* <Navbar />
+      <Navbar />
       <Hero />
       <Highlights />
-      <Model /> */}
-      <button
-      className="cursor-pointer"
-      onClick={() => {
-        throw new Error('This is your first error!');
-      }}
-    >
-      Break the world
-    </button>
+      <Model />
     </main>
   )
 }
