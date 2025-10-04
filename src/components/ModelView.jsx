@@ -7,7 +7,7 @@ import {
 import React, { Suspense } from "react";
 import Lights from "./Lights";
 import IPhone from "./IPhone";
-import * as THREE from 'three'
+import * as THREE from "three";
 
 const ModelView = ({
   index,
@@ -36,7 +36,7 @@ const ModelView = ({
         enablePan={false}
         rotateSpeed={0.4}
         target={new THREE.Vector3(0, 0, 0)}
-        onEnd={() => setRotationSize}
+        onEnd={() => setRotationSize(controlRef.current.getAzimuthalAngle())}
       />
       <group
         ref={groupRef}
@@ -50,7 +50,7 @@ const ModelView = ({
             </Html>
           }
         >
-          <IPhone />
+          <IPhone scale={index === 1 ? [15, 15, 15] : [17, 17, 17]} item={item} size={size} />
         </Suspense>
       </group>
     </View>
