@@ -24,7 +24,7 @@ Sentry.browserTracingIntegration()
   // Set tracesSampleRate to 1.0 to capture 100%
   // of transactions for performance monitoring.
   // We recommend adjusting this value in production
-  tracesSampleRate: 1.0,
+  tracesSampleRate: 0.2,
   // Set `tracePropagationTargets` to control for which URLs distributed tracing should be enabled
   // tracePropagationTargets: ["localhost", /^https:\/\/yourserver\.io\/api/],
   tracePropagationTargets: ["localhost", /apple-website-two-hazel\.vercel\.app/],
